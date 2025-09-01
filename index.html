@@ -151,10 +151,12 @@
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
-      <div class="columns is-full-width">
+      <div class="columns is-full-width has-text-centered">
         <h2 class="title is-3">Proposed Method</h2>
-        <img src="./static/images/method.svg"
-            alt="Overview of DiVE."/>
+        <div class="content">
+          <img src="./static/images/method.svg"
+              alt="Overview of DiVE."/>
+        </div>
       </div>
     </div>
 
@@ -163,68 +165,42 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Two Acceleration Tenchniques</h2>
 
-        <!-- MAD. -->
-        <div class="column">
-          <div class="content">
-            <h3 class="title is-4">Multi-Control Auxiliary Branch Distillation</h3>
-            <p>
-              It mitigates multi-condition CFG complexity via condition-specific auxiliary 
-              branches, enhanced by cross-condition knowledge distillation via mixed-control 
-              guidance training.
-            </p>
-            <img src="./static/images/mad.svg"
-                alt="Overview of MAD."/>
+        <div class="columns">
+          <!-- MAD. -->
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-4">Multi-Control Auxiliary Branch Distillation</h3>
+              <p>
+                It mitigates multi-condition CFG complexity via condition-specific auxiliary 
+                branches, enhanced by cross-condition knowledge distillation via mixed-control 
+                guidance training.
+              </p>
+              <img src="./static/images/mad.svg"
+                  alt="Overview of MAD."/>
+            </div>
           </div>
-        </div>
-        <br/>
-        <!--/ MAD. -->
+          <br/>
+          <!--/ MAD. -->
 
-        <!-- RPS. -->
-        <div class="column">
-          <div class="content">
-            <h3 class="title is-4">Resolution Progressively Sampling</h3>
-            <p>
-              It's a training-free acceleration strategy, where the inference mode with 
-              progressively increasing resolution alleviates the computational burden 
-              required for the early-stage inference.
-            </p>
-            <img src="./static/images/rps.svg"
-                alt="Overview of RPS."/>
+          <!-- RPS. -->
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-4">Resolution Progressively Sampling</h3>
+              <p>
+                It's a training-free acceleration strategy, where the inference mode with 
+                progressively increasing resolution alleviates the computational burden 
+                required for the early-stage inference.
+              </p>
+              <img src="./static/images/rps.svg"
+                  alt="Overview of RPS."/>
+            </div>
           </div>
+          <!--/ RPS. -->
         </div>
-        <!--/ RPS. -->
 
       </div>
     </div>
     <!--/ Acceleration. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
 
   </div>
 </section>
