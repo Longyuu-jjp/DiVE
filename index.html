@@ -153,11 +153,9 @@
     <div class="columns is-centered">
       <div class="columns is-full-width">
         <h2 class="title is-3">Proposed Method</h2>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/method.svg"
-                alt="Overview of DiVE."/>
-          </div>
+        <div class="content">
+          <img src="./static/images/method.svg"
+              alt="Overview of DiVE."/>
         </div>
       </div>
     </div>
@@ -168,36 +166,32 @@
         <h2 class="title is-3">Two Acceleration Tenchniques</h2>
 
         <!-- MAD. -->
-        <h3 class="title is-4">Multi-Control Auxiliary Branch Distillation</h3>
-        <div class="content has-text-justified">
-          <p>
-            It mitigates multi-condition CFG complexity via condition-specific auxiliary 
-            branches, enhanced by cross-condition knowledge distillation via mixed-control 
-            guidance training.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
+        <div class="column">
+          <div class="content">
+            <h3 class="title is-4">Multi-Control Auxiliary Branch Distillation</h3>
+            <p>
+              It mitigates multi-condition CFG complexity via condition-specific auxiliary 
+              branches, enhanced by cross-condition knowledge distillation via mixed-control 
+              guidance training.
+            </p>
             <img src="./static/images/mad.svg"
-                 alt="Overview of MAD."/>
+                alt="Overview of MAD."/>
           </div>
         </div>
         <br/>
         <!--/ MAD. -->
 
         <!-- RPS. -->
-        <h3 class="title is-4">Resolution Progressively Sampling</h3>
-        <div class="content has-text-justified">
-          <p>
-            It's a training-free acceleration strategy, where the inference mode with 
-            progressively increasing resolution alleviates the computational burden 
-            required for the early-stage inference.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
+        <div class="column">
+          <div class="content">
+            <h3 class="title is-4">Resolution Progressively Sampling</h3>
+            <p>
+              It's a training-free acceleration strategy, where the inference mode with 
+              progressively increasing resolution alleviates the computational burden 
+              required for the early-stage inference.
+            </p>
             <img src="./static/images/rps.svg"
-                 alt="Overview of RPS."/>
+                alt="Overview of RPS."/>
           </div>
         </div>
         <!--/ RPS. -->
